@@ -7,3 +7,5 @@ native resolution are stored. So just set it as background wallpaper folder and 
 
 <h6>Run at Startup</h4>
 <p1>Edit PathApplication in startup.vbs to the path where you have stored the application. Run startup.vbs and you are done! Runs without console.
+<l1>
+All credits for imgInfo.bat goes to Vasil Arnaudov https://github.com/npocmaka
