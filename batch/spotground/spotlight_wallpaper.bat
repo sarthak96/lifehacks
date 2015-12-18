@@ -5,7 +5,7 @@ SET res=%ScreenWidth%%ScreenHeight%
 SET "dest=%USERPROFILE%\Pictures\Spotlight\"
 SET "source=%USERPROFILE%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
 FOR /R %source% %%F IN (*.*) DO (
-	FOR /f %%a in ('Wia.bat %%F')  DO (
+	FOR /f %%a in ('imgInfo.bat %%F')  DO (
 		IF "%%a" == "%res%" (
 			echo F|XCOPY  "%%F" "%dest%%%~nF.jpeg" /d /y /q > nul
 		)
