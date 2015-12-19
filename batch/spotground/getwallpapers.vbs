@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "spotlight_wallpaper.bat", 0, True

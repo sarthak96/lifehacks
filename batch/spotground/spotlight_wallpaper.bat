@@ -1,4 +1,5 @@
 @echo off
+cd %~dp0
 rem Get native screen resolution - Not tried on multimonitor
 FOR /f "delims=" %%q IN ('%comspec% /c "wmic desktopmonitor get ScreenWidth,ScreenHeight" /value ^| find "="') DO (SET %%q)
 SET res=%ScreenWidth%%ScreenHeight%
