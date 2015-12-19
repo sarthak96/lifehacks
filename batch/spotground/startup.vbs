@@ -1,6 +1,6 @@
-Dim ShortcutName,VbsPath
+Dim PathApplication,ShortcutName,VbsPath
 VbsPath = Wscript.ScriptFullName
-PathApplication = <Enter Path Here>\spotlight_wallpaper.bat
+PathApplication = "<Enter Path Here>\spotlight_wallpaper.bat"
 ShortcutName = "SpotlightStartup"
 Call Shortcut(VbsPath,ShortcutName)
 Call Hidden_Run(Dblquote(PathApplication))
